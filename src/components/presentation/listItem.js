@@ -1,9 +1,9 @@
 import React from "react";
 
-const ListItem = (props) => {
+export const ListItem = (props) => {
     return (
         <div>
-            {/* <p>pass item name here</p> */}
+            {props.itemName}
             <button>Remove Item</button>
         </div>
     );

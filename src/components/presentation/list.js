@@ -1,9 +1,12 @@
 import React from "react";
+import { ListItem } from "./listItem";
 
 export const List = (props) => {
     return (
         <div>
-            render listItems here
+            {props.items.map((item) => {
+                return <ListItem itemName={item} key={item} />
+            })}
         </div>
     );
 }
