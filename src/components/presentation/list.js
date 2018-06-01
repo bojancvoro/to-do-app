@@ -5,7 +5,7 @@ export const List = (props) => {
     return (
         <div>
             {props.items.map((item) => {
-                return <ListItem itemName={item} key={item} />
+                return <ListItem itemName={item} key={item} handleRemoveItem={props.handleRemoveItem} />
             })}
         </div>
     );
